@@ -4,6 +4,7 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -125,4 +126,6 @@ public class AirlineRoutes {
     public void setFlight(Flight flight) {
         this.flight = flight;
     }
+
+
 }

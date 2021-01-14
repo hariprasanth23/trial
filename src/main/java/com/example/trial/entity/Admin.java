@@ -1,7 +1,6 @@
 package com.example.trial.entity;
 
 import org.hibernate.annotations.Type;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
