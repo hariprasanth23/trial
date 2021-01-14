@@ -42,19 +42,14 @@ public class AirlineRoutes {
 
     }
 
-    public AirlineRoutes(UUID airlineRouteId, Location from, Location to, double fare, Boolean activeStatus, Flight flight) {
-        this.airlineRouteId = airlineRouteId;
+    public AirlineRoutes(Location from, Location to, double fare, Boolean activeStatus, Flight flight, Date journeyTime, Date departureTime) {
         this.from = from;
         this.to = to;
         this.fare = fare;
         this.activeStatus = activeStatus;
         this.flight = flight;
-    }
-
-    public AirlineRoutes(Date journeyTime, Date departureTime, Admin admin) {
         this.journeyTime = journeyTime;
         this.departureTime = departureTime;
-        this.admin = admin;
     }
 
     public UUID getAirlineRouteId() {
