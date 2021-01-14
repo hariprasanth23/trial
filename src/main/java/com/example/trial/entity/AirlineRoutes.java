@@ -4,7 +4,6 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -43,13 +42,16 @@ public class AirlineRoutes {
 
     }
 
-    public AirlineRoutes(UUID airlineRouteId, Location from, Location to, double fare, Boolean activeStatus, Flight flight, Date journeyTime, Date departureTime, Admin admin) {
+    public AirlineRoutes(UUID airlineRouteId, Location from, Location to, double fare, Boolean activeStatus, Flight flight) {
         this.airlineRouteId = airlineRouteId;
         this.from = from;
         this.to = to;
         this.fare = fare;
         this.activeStatus = activeStatus;
         this.flight = flight;
+    }
+
+    public AirlineRoutes(Date journeyTime, Date departureTime, Admin admin) {
         this.journeyTime = journeyTime;
         this.departureTime = departureTime;
         this.admin = admin;
