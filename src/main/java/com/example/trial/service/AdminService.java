@@ -1,7 +1,6 @@
 package com.example.trial.service;
 
 import com.example.trial.dao.AdminDao;
-import com.example.trial.dao.PassengerDao;
 import com.example.trial.entity.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,4 +20,6 @@ public class AdminService {
     public List<Admin> getAllAdmins() {
         return adminRepo.findAll();
     }
+
+
 }

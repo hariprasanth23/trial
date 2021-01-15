@@ -21,9 +21,4 @@ public class BookingService {
         return bookings.stream().map(Booking::getPayment).collect(Collectors.toList());
     }
 
-
-
-
-
-
 }
